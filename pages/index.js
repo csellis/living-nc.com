@@ -5,21 +5,25 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-gray-500 min-h-screen">
       <Head>
-        <title>Create Next App</title>
+        <title>Living NC</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to our demo blog!</h1>
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <h1 className={styles.title}>Welcome to our demo blog!</h1>
 
-        <p>
-          You can find more articles on the{' '}
-          <Link href='/blog'>
-            <a>blog articles page</a>
-          </Link>
-        </p>
+          <p>
+            You can find more articles on the{' '}
+            <Link href='/blog'>
+              <a>blog articles page</a>
+            </Link>
+          </p>
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
